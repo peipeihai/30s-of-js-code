@@ -7,8 +7,10 @@
  */
 
 const bifurcateBy = (arr, fn) => arr.reduce(
-    (acc, val, index) => (acc[fn(val, index) ? 0 : 1].push(val), acc),
+    (acc, val, index) => {
+        acc[fn(val, index) ? 0 : 1].push(val);
+        return acc;
+    },
     [[], []]
 );
-
 

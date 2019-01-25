@@ -9,7 +9,10 @@
 
 const bifurcate = (arr, filters) =>
     arr.reduce(
-        (acc, val, index) => (acc[filters[index] ? 0 : 1].push(val), acc), 
+        (acc, val, index) => {
+            acc[filters[index] ? 0 : 1].push(val);
+            return acc;
+        }, 
         [ [], [] ]
     );
 
