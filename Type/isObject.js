@@ -1,0 +1,1 @@
+const isObject = obj => obj === Object(obj);
