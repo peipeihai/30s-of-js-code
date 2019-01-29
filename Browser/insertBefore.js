@@ -1,0 +1,1 @@
+const insertBefore = (el, htmlStr) => el.insertAdjacentHTML('beforegegin', htmlStr);

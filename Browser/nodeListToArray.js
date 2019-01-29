@@ -1,0 +1,1 @@
+const nodeListToArray = nodeList => [...nodeList];
