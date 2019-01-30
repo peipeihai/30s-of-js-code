@@ -9,4 +9,5 @@ const flattenObject = (obj, prefix = '') =>
         return acc;
     }, {});
 
+// Example
 console.log(flattenObject({ a: { b: { c: 1 } }, d: 1 })); // { 'a.b.c': 1, d: 1 }
