@@ -1,8 +1,5 @@
 /**
  * 将数组扁平化展开
- * 
- * Examples:
- * deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
  */
 
 // const deepFlatten = arr => {

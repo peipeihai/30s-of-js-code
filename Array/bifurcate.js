@@ -1,12 +1,7 @@
 /**
  * bifurcate: 分叉。
  * 根据条件将数组分为两个 group
- * 
- * Examples:
- * console.log(bifurcate(['a', 'b', 'c', 'd'], [true, false, false, true]));  // [ [ 'a', 'd' ], [ 'b', 'c' ] ]
- * console.log(bifurcate(['a', 'b', 'c', 'd'], [true, false, false, false]));  // [ [ 'a' ], [ 'b', 'c', 'd' ] ]
  */
-
 
 /**
  * 
@@ -35,3 +30,8 @@ const bifurcate = (arr, filters) =>
             []
         ]
     );
+
+
+// Examples
+const res = bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]); // [ ['beep', 'boop', 'bar'], ['foo'] ]
+console.log(res);
